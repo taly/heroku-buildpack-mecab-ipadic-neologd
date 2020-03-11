@@ -2,7 +2,7 @@
 
 # This pack requires mecab and mecab-ipadic
 
-if [ -f /app/.apt/usr/mecab ]; then
+if [ -f /app/.apt/usr/lib/mecab ]; then
   echo "mecab-ipadic-NEologd"
   exit 0
 else
