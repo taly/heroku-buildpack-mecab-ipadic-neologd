@@ -1,5 +1,8 @@
 #!/bin/sh
 
+echo "-----> Checking whether mecab dir exists"
+echo `ls /app/.apt/usr/bin/mecab-config`
+
 echo "-----> Cloning mecab-ipadic-NEologd repository"
 git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git
 
