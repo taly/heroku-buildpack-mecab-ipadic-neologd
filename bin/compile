@@ -29,7 +29,7 @@ echo `ls .`
 
 echo "-----> Cloning mecab-ipadic-NEologd repository into /app/mecab-ipadic-neologd"
 #git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git /app/mecab-ipadic-neologd
-git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git .
+git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git
 
 echo "-----> What's up now?"
 echo `ls .`
