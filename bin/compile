@@ -7,10 +7,11 @@ echo "-----> What's 'pwd'?"
 echo `pwd`
 
 echo "-----> Cloning mecab-ipadic-NEologd repository"
-git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git /app
+mkdir /app/mecab-ipadic-neologd
+git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git /app/mecab-ipadic-neologd
 
 #echo "-----> Modifying mecab-config to work with /app/.apt/usr as base dir"
 #sed -i 's/\/usr/\/app\/\.apt\/usr/' /app/.apt/usr/bin/mecab-config
 
 #echo "-----> Installing mecab-ipadic-neologd"
-#./mecab-ipadic-neologd/bin/install-mecab-ipadic-neologd -y -n -u `whoami`
+#/app/mecab-ipadic-neologd/bin/install-mecab-ipadic-neologd -y -n -u `whoami`
