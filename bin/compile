@@ -15,14 +15,24 @@ echo "-----> Does arg1 exist? Does /app?"
 echo `ls $1`
 echo `ls /app`
 
-echo "-----> Creating /app/mecab-ipadic-neologd"
-mkdir /app/mecab-ipadic-neologd
+#echo "-----> Creating /app/mecab-ipadic-neologd"
+#mkdir /app/mecab-ipadic-neologd
 
-echo "-----> Dirs created?"
-echo `ls /app/mecab-ipadic-neologd`
+#echo "-----> Dirs created?"
+#echo `ls /app/mecab-ipadic-neologd`
+
+echo "-----> Going in /app"
+cd /app
+
+echo "-----> What's up in here?"
+echo `ls .`
 
 echo "-----> Cloning mecab-ipadic-NEologd repository into /app/mecab-ipadic-neologd"
-git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git /app/mecab-ipadic-neologd
+#git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git /app/mecab-ipadic-neologd
+git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git .
+
+echo "-----> What's up now?"
+echo `ls .`
 
 echo "-----> Cloning presumably done"
 
