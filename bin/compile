@@ -6,9 +6,16 @@ echo `ls /app/.apt/usr/bin/mecab-config`
 echo "-----> What's 'pwd'?"
 echo `pwd`
 
-echo "-----> Cloning mecab-ipadic-NEologd repository"
+echo "-----> What's $1?"
+echo $1
+
+echo "-----> Creating /app/mecab-ipadic-neologd"
 mkdir /app/mecab-ipadic-neologd
+
+echo "-----> Cloning mecab-ipadic-NEologd repository into /app/mecab-ipadic-neologd"
 git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git /app/mecab-ipadic-neologd
+
+echo "-----> Cloning presumably done"
 
 #echo "-----> Modifying mecab-config to work with /app/.apt/usr as base dir"
 #sed -i 's/\/usr/\/app\/\.apt\/usr/' /app/.apt/usr/bin/mecab-config
