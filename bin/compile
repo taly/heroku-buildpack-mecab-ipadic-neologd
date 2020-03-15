@@ -11,6 +11,10 @@ echo $1
 echo $2
 echo $3
 
+echo "-----> Does arg1 exist? Does /app?"
+echo `ls $1`
+echo `ls /app`
+
 echo "-----> Creating /app/mecab-ipadic-neologd"
 mkdir /app/mecab-ipadic-neologd
 
