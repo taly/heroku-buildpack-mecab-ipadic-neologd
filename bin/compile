@@ -1,5 +1,6 @@
 #!/bin/sh
 
+BUILD_DIR=$1
 CACHE_DIR=$2
 
 echo "-----> Checking whether mecab dir exists"
@@ -37,8 +38,8 @@ echo "-----> What's up now?"
 echo `ls -a .`
 echo `ls -a /app`
 
-echo "-----> Checking cache dir"
-echo `ls $CACHE_DIR/.apt`
+echo "-----> Checking .apt in build dir"
+echo `ls $BUILD_DIR/.apt`
 
 echo "-----> Cloning presumably done"
 
