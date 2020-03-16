@@ -34,17 +34,17 @@ echo "-----> Cloning mecab-ipadic-NEologd repository into /app/mecab-ipadic-neol
 #git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git /app/mecab-ipadic-neologd
 git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git
 
-echo "-----> What's up now?"
-echo `ls -a .`
-echo `ls -a /app`
+#echo "-----> What's up now?"
+#echo `ls -a .`
+#echo `ls -a /app`
 
-echo "-----> Checking .apt in build dir"
-echo `ls $BUILD_DIR/.apt`
+#echo "-----> Checking .apt in build dir"
+#echo `ls $BUILD_DIR/.apt`
 
 echo "-----> Cloning presumably done"
 
-echo "-----> Checking mecab-config now?"
-echo `ls .apt/usr/bin/mecab-config`
+echo "-----> Checking mecab-config in BUILD_DIR"
+echo `ls $BUILD_DIR/.apt/usr/bin/mecab-config`
 
 #echo "-----> Modifying mecab-config to work with /app/.apt/usr as base dir"
 #sed -i 's/\/usr/\/app\/\.apt\/usr/' /app/.apt/usr/bin/mecab-config
