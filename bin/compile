@@ -7,7 +7,7 @@ echo "-----> Cloning mecab-ipadic-NEologd repository"
 git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git
 
 echo "-----> Modifying mecab-config to work with $BUILD_DIR/.apt/usr as base dir"
-sed -i "s/\/usr/$BUILD_DIR\/\.apt\/usr/" $BUILD_DIR/.apt/usr/bin/mecab-config
+sed -i 's/\/usr/'"$BUILD_DIR"'\/\.apt\/usr/' $BUILD_DIR/.apt/usr/bin/mecab-config
 
 echo "-----> Checking that mecab-config is good"
 echo `grep usr $BUILD_DIR/.apt/usr/bin/mecab-config`
