@@ -36,6 +36,9 @@ echo `ls .`
 
 echo "-----> Cloning presumably done"
 
+echo "-----> Checking mecab-config now?"
+echo `ls .apt/usr/bin/mecab-config`
+
 #echo "-----> Modifying mecab-config to work with /app/.apt/usr as base dir"
 #sed -i 's/\/usr/\/app\/\.apt\/usr/' /app/.apt/usr/bin/mecab-config
 
