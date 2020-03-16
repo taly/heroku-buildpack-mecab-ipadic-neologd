@@ -6,6 +6,9 @@ CACHE_DIR=$2
 echo "-----> Cloning mecab-ipadic-NEologd repository"
 git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git
 
+echo "-----> Checking"
+echo "s/\/usr/$BUILD_DIR\/\.apt\/usr/"
+
 echo "-----> Modifying mecab-config to work with $BUILD_DIR/.apt/usr as base dir"
 sed -i "s/\/usr/$BUILD_DIR\/\.apt\/usr/" "$BUILD_DIR/.apt/usr/bin/mecab-config"
 
