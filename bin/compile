@@ -2,7 +2,7 @@
 
 BUILD_DIR=$1
 CACHE_DIR=$2
-ESCAPED_BUILD_DIR=`echo $BUILD_DIR | sed 's/\//\\\//g'`
+ESCAPED_BUILD_DIR=$(echo $BUILD_DIR | sed 's/\//\\\//g')
 echo "-----> escaped build dir:"
 echo $ESCAPED_BUILD_DIR 
 
